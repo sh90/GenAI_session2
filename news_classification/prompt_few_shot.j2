@@ -1,0 +1,15 @@
+Role: You classify English news into a fixed taxonomy.
+
+Task: Assign exactly one topic from:
+["politics","business","technology","sports","entertainment","science","health","world","finance","environment"]
+
+Constraints:
+Return ONLY:
+{"topic":"<label>","confidence":"low|medium|high","evidence":"<=140 chars"}
+
+Examples:
+- "Central bank hikes rates; markets react" -> {"topic":"finance","confidence":"high","evidence":"rate hike; markets"}
+- "New AI chip promises faster training" -> {"topic":"technology","confidence":"high","evidence":"AI chip; compute"}
+- "Wildfires force evacuations in California" -> {"topic":"environment","confidence":"medium","evidence":"wildfires; evacuations"}
+
+Text: "{{ news_text }}"

@@ -1,0 +1,6 @@
+user_id,product_id,review,sentiment,evidence
+1,a001,The delivery was fast and the staff were polite,positive,"fast delivery, polite staff"
+2,a002,I waited 30 minutes and still no update,negative,"30 minutes wait, no update"
+3,a003,Product quality is okay but packaging was poor,neutral,"quality okay, packaging poor"
+4,a004,Excellent sound quality and the battery lasts all day,positive,"excellent sound quality, battery lasts all day"
+5,a005,The size runs small and the fit is uncomfortable,negative,"size runs small, uncomfortable fit"

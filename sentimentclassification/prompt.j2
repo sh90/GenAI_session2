@@ -1,0 +1,15 @@
+Role: You analyze sentiment for support tickets.
+Task: Classify sentiment with brief evidence.
+
+Constraints:
+Return ONLY valid JSON: {
+  "sentiment": "positive|neutral|negative",
+  "evidence": "<=140 chars"
+}.
+Do not add explanations or extra keys.
+
+Examples:
+- "Hold times were long and nothing got solved." -> {"sentiment":"negative","evidence":"long wait, unresolved"}
+- "Thanks! The replacement arrived early." -> {"sentiment":"positive","evidence":"arrived early"}
+
+User: "{{ user_text }}"
